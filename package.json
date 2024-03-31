@@ -1,0 +1,54 @@
+{
+  "name": "babel-plugin-vue-jsx-hmr",
+  "description": "babel plugin for vue3 jsx HMR",
+  "author": "liyincode",
+  "version": "1.0.0-beta.2",
+  "license": "MIT",
+  "homepage": "https://github.com/liyincode/babel-plugin-vue-jsx-hmr#readme",
+  "keywords": [
+    "babel-plugin",
+    "webpack",
+    "rsbuild",
+    "vue3",
+    "jsx",
+    "hmr"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liyincode/babel-plugin-vue-jsx-hmr"
+  },
+  "bugs": {
+    "url": "https://github.com/liyincode/babel-plugin-vue-jsx-hmr/issues"
+  },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "watch": "tsup --watch"
+  },
+  "dependencies": {
+    "@babel/core": "^7.24.3",
+    "@vue/babel-plugin-jsx": "^1.2.2"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.20.5",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.3"
+  }
+}
